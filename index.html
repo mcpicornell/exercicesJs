@@ -55,6 +55,31 @@
         <button type="button" class="btn-addRow" onclick="addRow()">Agregar Fila</button>
     </div>
     
+    <dialog id="dialog-form">
+        <form method="dialog">
+
+            <label>Título: </label>
+            <input id="title" type="text" name="title"/>
+            <br>
+
+            <label>Autor: </label>
+            <input id="author" type="text" name="author"/>
+            <br>
+
+            <label>Contenido: </label>
+            <input id="content" type="text" name="content"/>
+            <br>
+
+            <menu>
+                <button id="cancel" type="close">Cancel</button>
+                <button id="confirmBtn" type="submit" value="send">Enviar Formulario</button>
+            </menu>
+        </form>
+
+    </dialog>
+    <button id="openForm">Abrir Formulario</button>
+    <output></output>
+
     
 
 </body>
