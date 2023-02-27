@@ -30,3 +30,18 @@ showButton.addEventListener('click', () => {
 dialogForm.addEventListener('close', () => {
   return outputBox.value = dialogForm.returnValue;
 });
+
+//Ejercicio 6
+
+// Entrada : Objeto que representa cada una de las entradas ( fila de nuestra tabla del blog )
+// Autor : Datos muy básicos del autor (que estará dentro de nuestra entrada: Nombre, Apellidos y Nickname (que será el que se muestre como autor)
+
+let entrada = {};
+
+class Autor{
+    constructor(nombre, apellidos, nickname){
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.nickname = nickname;
+    }
+};
