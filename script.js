@@ -1,16 +1,16 @@
 function addRow()
 {
 
-    document.getElementById("table").insertRow(-1).innerHTML = '<tr></tr>';
+    document.getElementById("tbody").insertRow(-1).innerHTML = '<tr>This is a row</tr>';
 }
 
-function removeRow() {
-    var table = document.getElementById("table");
-    var rowCount = table.rows.length;
-    //console.log(rowCount);
+var mainListDiv = document.getElementById("mainListDiv"),
+    mediaButton = document.getElementById("mediaButton");
 
-    if (rowCount <= 1)
-        alert('No se puede eliminar el encabezado');
-    else
-        table.deleteRow(rowCount - 1);
+mediaButton.onclick = function () {
+    
+    "use strict";
+    
+    mainListDiv.classList.toggle("show_list");
+    mediaButton.classList.toggle("active");
 }

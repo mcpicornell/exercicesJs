@@ -12,6 +12,31 @@
   />
 </head>
 <body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">MY BLOG</a>
+            </div>
+            <div class="main_list" id="mainListDiv">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My stuff</a></li>
+                    <li><a href="#">stories</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+            <div class="media_button">
+                <button class="main_media_button" id="mediaButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+        
+    <section class="home"></section>
     <div class="table-responsive">
         <table id="table" class="table">
             <thead>
@@ -21,19 +46,16 @@
                     <th>Contenido</th>
                 </tr>
             </thead>
-           <tbody>
+           <tbody id="tbody">
             
          
     
            </tbody>
         </table>
-    </div>
-    
-    
-    <div class="form-group">
         <button type="button" class="btn-addRow" onclick="addRow()">Agregar Fila</button>
-        <button type="button" class="btn-removeRow" onclick="removeRow()">Eliminar Fila</button>
     </div>
+    
+    
 
 </body>
 <script src="script.js"></script>
